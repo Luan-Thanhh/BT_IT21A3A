@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <title>Vehicle Palettes</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #main {
+        margin: 5% auto;
+        width: 60%;
+        text-align: center;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 48px;
+      }
+
+      p {
+        padding-top: 16px;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .selectize-control.single .selectize-input {
+        padding: 8px 0;
+        width: 190px;
+      }
+
+      .selectize-control {
+        margin-top: 32px;
+        display: inline-block;
+      }
+
+      .btn {
+        margin-top: 32px;
+        padding: 8px 16px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main id="main">
+      <h1>Creating a sever width Node.js</h1>
+      <p>Hello, I'm a Node.js sever for searching vehicle palette number!</p>
+      <form class="form" action="http://localhost:3033/" method="post">
+        <!-- <input list="datalist" name="name" placeholder="Nhập thể loại..." /> -->
+        <select id="name" name="name" placeholder="Tên tỉnh thành">
+          <option value=""> </option>
+          <option value="Hà Nội">Hà Nội</option>
+          <option value="Thái Nguyên">Thái Nguyên</option>
+          <option value="Phú Thọ">Phú Thọ</option>
+          <option value="Bắc Giang">Bắc Giang</option>
+          <option value="Hòa bình">Hòa bình</option>
+          <option value="Bắc Ninh">Bắc Ninh</option>
+          <option value="Hà Nam">Hà Nam</option>
+          <option value="Hải Dương">Hải Dương</option>
+          <option value="Hưng Yên">Hưng Yên</option>
+          <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+          <option value="Quảng Ninh">Quảng Ninh</option>
+          <option value="Hải Phòng">Hải Phòng</option>
+          <option value="Nam Định">Nam Định</option>
+          <option value="Ninh Bình">Ninh Bình</option>
+          <option value="Thái Bình">Thái Bình</option>
+          <option value="Hà Giang">Hà Giang</option>
+          <option value="Cao Bằng">Cao Bằng</option>
+          <option value="Lào Cai">Lào Cai</option>
+          <option value="Bắc Cạn">Bắc Cạn</option>
+          <option value="Lạng Sơn">Lạng Sơn</option>
+          <option value="Tuyên Quang">Tuyên Quang</option>
+          <option value="Yên Bái">Yên Bái</option>
+          <option value="Điện Biên">Điện Biên</option>
+          <option value="Lai Châu">Lai Châu</option>
+          <option value="Sơn La">Sơn La</option>
+          <option value="Thanh Hóa">Thanh Hóa</option>
+          <option value="Nghệ An">Nghệ An</option>
+          <option value="Hà Tĩnh">Hà Tĩnh</option>
+          <option value="Quảng Bình">Quảng Bình</option>
+          <option value="Quảng Trị">Quảng Trị</option>
+          <option value="Thừa Thiên">Thừa Thiên</option>
+          <option value="Đà Nẵng">Đà Nẵng</option>
+          <option value="Quảng Nam">Quảng Nam</option>
+          <option value="Quảng Ngãi">Quảng Ngãi</option>
+          <option value="Bình Định">Bình Định</option>
+          <option value="Phú Yên">Phú Yên</option>
+          <option value="Khánh Hòa">Khánh Hòa</option>
+          <option value="Ninh Thuận">Ninh Thuận</option>
+          <option value="Bình Thuận">Bình Thuận</option>
+          <option value="Kon Tum">Kon Tum</option>
+          <option value="Gia Lai">Gia Lai</option>
+          <option value="Đắk Lắk">Đắk Lắk</option>
+          <option value="Đắc Nông">Đắc Nông</option>
+          <option value="Lâm Đồng">Lâm Đồng</option>
+          <option value="Hồ Chí">Hồ Chí</option>
+          <option value="Bình Phước">Bình Phước</option>
+          <option value="Bình Dương">Bình Dương</option>
+          <option value="Đồng Nai">Đồng Nai</option>
+          <option value="Tây Ninh">Tây Ninh</option>
+          <option value="Bà Rịa">Bà Rịa</option>
+          <option value="Cần Thơ">Cần Thơ</option>
+          <option value="Long An">Long An</option>
+          <option value="Đồng Tháp">Đồng Tháp</option>
+          <option value="Tiền Giang">Tiền Giang</option>
+          <option value="An Giang">An Giang</option>
+          <option value="Bến Tre">Bến Tre</option>
+          <option value="Vĩnh Long">Vĩnh Long</option>
+          <option value="Hậu Giang">Hậu Giang</option>
+          <option value="Kiên Giang">Kiên Giang</option>
+          <option value="Sóc Trăng">Sóc Trăng</option>
+          <option value="Bạc Liêu">Bạc Liêu</option>
+          <option value="Cà Mau">Cà Mau</option>
+        </select>
+
+        <button type="submit" class="btn">Get vehicle palette</button>
+      </form>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+      integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $('select').selectize({
+          sortField: 'text'
+        });
+      });
+    </script>
+  </body>
+
+</html>
